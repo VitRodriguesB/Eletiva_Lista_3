@@ -9,7 +9,7 @@
   <body>
   <div class = "container mt-5">
   <h1>Lista 3 Exercicio 1</h1>
-
+    
     <form action="exer1.php" method="POST">
         <?php for($i=0;$i<7;$i++): ?>
             <input type="number" name="num[]" placeholder="Numero"/>
