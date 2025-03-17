@@ -8,9 +8,9 @@
   </head>
   <body>
   <div class = "container mt-5">
-  <h1>Lista 3 Exercicio 8</h1>
+  <h1>Lista 3 Exercicio 10</h1>
     
-    <form action="exer8.php" method="POST">
+    <form action="exer10.php" method="POST">
             <div class="mb-3">
                     <label for="valor" class="form  -label"> Informe um numero </label>
                     <input type="number" id="valor" name="valor" class="form-control" required="">
@@ -24,12 +24,9 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         try{
             $num = $_POST['valor'];
-            echo"Contagem Regressiva";
-            do {
-              echo"<br>$num";
-              $num--;
-            } while ($num >=1);
-
+            for($i = 1; $i <= 10; $i++){
+                echo"$num X $i = ". ($num * $i). "<br> \n";
+           }
         }catch(Exception $e){
             echo $e->getMessage();
         }
